@@ -1,11 +1,12 @@
 class UberPool extends Car {
     
-    String brand;
-    String model;
+    private String brand;
+    private String model;
 
     public UberPool(String license, Account driver, String brand, String model){
         super(license, driver);
         this.brand = brand;
-        this.driver = driver;
+        this.model = model;
+        super.setPassengenger(4);
     }
 }
